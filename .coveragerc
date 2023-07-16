@@ -1,0 +1,8 @@
+[run]
+show_missing=True
+branch=True
+source=codebuddy
+omit=
+    codebuddy/**/migrations*
+    */managers.py
+    */__init__.py
