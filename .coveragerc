@@ -3,6 +3,8 @@ show_missing=True
 branch=True
 source=codebuddy
 omit=
-    codebuddy/**/migrations*
+    codebuddy/**/migrations/*
     */managers.py
     */__init__.py
+    codebuddy/grpc_service/generated/*
+    codebuddy/**/management/*

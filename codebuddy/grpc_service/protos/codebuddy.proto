@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// Interface exported by the sever
+service CodeBuddy {
+    // Get a buddy information given their phone number
+    // if they exist.
+    rpc GetBuddy (GetBuddyRequest) returns (Buddy) {}
+}
+
+// This defines a phone number request to identify a buddy
+message GetBuddyRequest {
+    // Phone number belonging to the buddy
+    string phone_number = 1;
+}
+
+// A buddy describes a user or subscriber in the platform.
+message Buddy {
+    string phone_number = 1;
+    string display_name = 2;
+}
