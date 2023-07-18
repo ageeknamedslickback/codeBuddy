@@ -5,3 +5,5 @@ model_bakery~=1.12.0
 pytest-cov~=4.0.0
 django-phonenumber-field~=7.1.0
 phonenumbers~=8.13.16
+grpcio~=1.56.0
+grpcio-tools~=1.56.0
